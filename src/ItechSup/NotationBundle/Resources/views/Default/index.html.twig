@@ -1,0 +1,25 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Index</h1>
+    <table>
+        <tr>
+            <td>
+                <a href="{{ path('etudiant_index') }}">Etudiants</a>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a href="{{ path('enseignant_index') }}">Enseignants</a>
+            </td>
+        </tr>
+            <td>
+                <a href="{{ path('session_index') }}">Sessions</a>
+            </td>
+        <tr>
+            <td>
+                <a href="{{ path('note_index') }}">Notes</a>
+            </td>
+        </tr>
+    </table>
+{% endblock %}
